@@ -16,7 +16,7 @@ class KNN:
             distances.append((d, self.y_train[i]))
         distances.sort(key=lambda dist: dist[0])
 
-        # now pick the k-nearest neighbours
+        # now pick the k-nearest neighbour
         kn = distances[: self.k]
 
         # counting votes
